@@ -1,6 +1,6 @@
 - name: varibles getting from prompt
   hosts: web
-  vars_propmt:
+  vars_prompt:
   - name: COURSE
     prompt: please enter the course name
   - name: DURATION
