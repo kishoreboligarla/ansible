@@ -9,14 +9,12 @@
     ansible.builtin.debug:
       msg: "hi iam leraning {{COURSE}},Duration is{{DURATION}},Trainer:{{TRAINER}}"
 
-  tasks:
   - name: print the information again
     vars:
-      COURSE: ansible
+      COURSE: "ansible"
     ansible.builtin.debug:
       msg: "hi iam leraning {{COURSE}},Duration is{{DURATION}},Trainer:{{TRAINER}}"
 
-  tasks:
   - name: print the information and again
     ansible.builtin.debug:
       msg: "hi iam leraning {{COURSE}},Duration is{{DURATION}},Trainer:{{TRAINER}}"
