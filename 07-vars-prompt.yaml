@@ -3,10 +3,13 @@
   vars_prompt:
   - name: COURSE
     prompt: please enter the course name
+    private: false #not confidential
   - name: DURATION
     prompt: enter the duration time
+    private: false #not confidential
   - name: TRAINER
     prompt: enter the trainer name
+    private: false #not confidential
 
   tasks:
   - name: print the course details
