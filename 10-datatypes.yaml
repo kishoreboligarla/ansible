@@ -1,19 +1,19 @@
 - name: devops course information
   hosts: local
-  #connection: local # for localhosts
+  connection: local #for local conection
   vars:
-    course: "DevOps with AWS" #string
-    duration: 120 #number
-    topics: #list
+    course: "DevOps with AWS" 
+    duration: 120 
+    topics: 
     - Linux
     - Shell
     - Ansible
     - Terraform
     - AWS
     - K8
-    live: true #boolean
-    tools: #map/dictionary
-      ci: jenkins # string
+    live: true 
+    tools: 
+      ci: jenkins 
       cm: ansible
       cloud: aws
       aws:
