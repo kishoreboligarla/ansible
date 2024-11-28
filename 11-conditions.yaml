@@ -1,0 +1,17 @@
+- name: check the given number with condition
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: givennumebr
+    propmt: please enter the number
+    private: false
+  tasks:
+  - name: print this if lessthen 10
+    ansible.builtin.debug:
+      msg: "given number{{givennumber}}"is lessthen 10
+    when: givennumber | int < 10
+
+  - name: print this if greaterthen 10
+    ansible.builtin.debug:
+      msg: "given number{{givennumber}}"is greaterthen 10
+    when: givennumber | int >= 10
