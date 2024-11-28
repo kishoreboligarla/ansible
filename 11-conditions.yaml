@@ -3,7 +3,7 @@
   connection: local
   vars_prompt:
   - name: my_number
-    propmt: please enter the number
+    prompt: please enter the number
     private: false
   tasks:
   - name: print this if lessthen 10
