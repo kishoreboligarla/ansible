@@ -9,7 +9,7 @@
     - mysql
     - backend
     - fontend
-  tasks: create ec2 instance
+  tasks: 
   - name: create ec2 instance
     amazon.aws.ec2_instance:
       name: "{{ item }}"
