@@ -13,7 +13,7 @@
     
   tasks: 
   - name: ansible to install boto3 and botocore
-    ansible.builtin.pip:
+    ansible.builtin.pip3:
       name:
       - boto3
       - botocore
